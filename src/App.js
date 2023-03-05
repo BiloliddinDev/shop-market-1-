@@ -21,11 +21,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/category" element={<Category set={setKarzina}/>} />
+          <Route path="/category" element={<Category set={setKarzina} />} />
           <Route path="/blog" element={<Blog />} />
           {/* <Route path="/singl" element={<Singl />} /> */}
           <Route path="/blog/:id" element={<SinglBlog />} />
-          <Route path="/karzina" element={<Karzina products={karzina} set={setKarzina}/>} />
+          <Route
+            path="/karzina"
+            element={<Karzina products={karzina} set={setKarzina} />}
+          />
         </Routes>
       </Layout>
     </div>
